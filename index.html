@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax 3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section>
+        <div class="container-one">
+            <img id='splat-one' src="assets/sssplatter.svg" data-rate="0.5">
+            <img id='splat-two' src="assets/sssplatter(2).svg" data-rate="0.7">
+        </div>
+        <div class="container-two">
+            <img id='splat-three' src="assets/sssplatter(3).svg" data-rate="0.9">
+            <img id='splat-four' src="assets/sssplatter4.svg" data-rate="-.5">
+        </div>
+        <div class="container-three">
+            <img id="splat-five" src="assets/sssplatter5.svg">
+            <img id="splat-six" src="assets/sssplatter8.svg">
+        </div>
+        <div class="container-four">
+            <img id="splat-seven" src="assets/sssplatter7.svg">
+            <img id="splat-eight" src="assets/sssplatter6.svg">
+        </div>
+        <div class="emojis">
+            <img id="em-one" class="emoji" src="assets/ccclaymoji.svg" data-rate="0.5">
+            <img id="em-two" class="emoji" src="assets/ccclaymoji(1).svg" data-rate="1.4">
+            <img id="em-three" class="emoji" src="assets/ccclaymoji(2).svg" data-rate="0.6">
+            <img id="em-four" class="emoji" src="assets/ccclaymoji(3).svg" data-rate="0.7">
+        </div>
+    </section>
+
+    <section>
+
+    </section>
+
+    <section>
+
+    </section>
+
+    <section>
+
+    </section>
+
+    <script>
+
+        const splat1 = document.getElementById('splat-one')
+        const splat2 = document.getElementById('splat-two')
+        const splat3 = document.getElementById('splat-three')
+        const splat4 = document.getElementById('splat-four')
+
+        const emoji1 = document.getElementById('em-one')
+        const emoji2 = document.getElementById('em-two')
+        const emoji3 = document.getElementById('em-three')
+        const emoji4 = document.getElementById('em-four')
+
+        window.addEventListener('scroll', e => {
+            //splat1.style.transform = `translate3d(0px, ${window.pageYOffset * splat1.dataset.rate }px, 0px)`
+            //splat2.style.transform = `translate3d(0px, ${window.pageYOffset * splat2.dataset.rate }px, 0px)`
+            //splat3.style.transform = `translate3d(0px, ${window.pageYOffset * splat1.dataset.rate }px, 0px)`
+            //splat4.style.transform = `translate3d(0px, ${window.pageYOffset * splat4.dataset.rate }px, 0px)`
+
+            emoji1.style.transform = `translate3d(0px, ${window.pageYOffset * .6 }px, 0px)`
+            emoji2.style.transform = `translate3d(0px, ${window.pageYOffset * .4 }px, 0px)`
+            emoji3.style.transform = `translate3d(0px, ${window.pageYOffset * .2 }px, 0px)`
+            emoji4.style.transform = `translate3d(0px, ${window.pageYOffset * .5 }px, 0px)`
+            
+        })
+
+    </script>
+</body>
+</html>
